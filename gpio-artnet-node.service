@@ -1,0 +1,11 @@
+[Unit]
+Description=GPIO Artnet Service
+Wants=network.target
+After=network.target
+[Service]
+User=pi
+Restart=on-failure
+RestartSec=45
+ExecStart=/usr/local/bin/node /home/pi/gpio-artnet-node/lib/index.js --config /home/pi/dmx-artnet-host/config.json
+[Install]
+WantedBy=multi-user.target

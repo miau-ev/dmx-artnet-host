@@ -1,0 +1,24 @@
+{
+	"port": 6453,
+	"universe": 0,
+	"ports": [
+		{
+			"dmx": 1,
+			"gpio": [
+				{
+					"port": 2,
+					"pwm": false
+				},
+				{
+					"port": 3,
+					"pwm": false
+				},
+				{
+					"port": 7,
+					"pwm": false
+				}
+			]
+		}
+	]
+}
+
