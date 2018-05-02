@@ -3,7 +3,6 @@ Description=uDMX Artnet Service
 Wants=network.target
 After=network.target
 [Service]
-User=pi
 Restart=on-failure
 RestartSec=45
 ExecStart=/usr/local/bin/node /usr/local/bin/udmx-artnet-bridge
